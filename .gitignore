@@ -1,0 +1,12 @@
+# logs and databse
+*.log
+*.sql
+*.sqlite
+
+*.pot
+*.pyc
+__pycache__
+venv/:
+
+.DS_Store
+.DS_Store?
