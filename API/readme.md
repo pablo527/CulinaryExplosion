@@ -26,7 +26,7 @@ mIgraciones de models
     python manage.py makemigrations
 
 
-crear tablar 
+crear tabla
 
     python manage.py migrate
 
