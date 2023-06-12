@@ -1,0 +1,206 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "usuario": "John Doe",
+        "email": "john.due@gmail.com"
+      }
+    ],
+    "restaurants": [
+      {
+        "id": "911",
+        "restauratName": "911 Hot Burger",
+        "productName": "Burger 911",
+        "description": "Bruce Wayne",
+        "ubication": "Detective Comics #27",
+        "socialMedia": "Bruce Wayne",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/0089f6e6-23b5-4bbf-a942-f2436930f300/public",
+        "img01": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/8b34dcfe-c4b5-4493-0658-0e36f68e3900/public",
+        "img02":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/ef6cc4fd-db11-479d-4338-38a8d9372700/public",
+        "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/03d509f9-84c8-40f5-e9d2-0149e0442d00/public"
+       
+      },
+      {
+        "id": "agasajo",
+        "restauratName": "Agasajo",
+        "productName": "Suprema",
+        "description": " Nuestra Hamburguesa 'Suprema' es una exquisita fusión de sabores cítricos, dulces y salados que honran las tradiciones culinarias de mamá. Además de su irresistible sabor, destaca por su atractiva gama de colores que se aparta de los tradicionales. Elaborada con vegetales frescos, pan brioche, carne artesanal 100% de res acompañada con pulled beef en salsa a base de vegetales, nuestras salsas de la casa, una deliciosa mermelada de frutos tropicales que es la protagonista de esta receta, y, para culminar, una costra de queso parmesano que aporta un irresistible toque crujiente. Todo esto se combina para brindarte una experiencia gastronómica verdaderamente única e inigualable.",
+        "ubication": "Action Comics #1",
+        "socialMedia": "Kal-El",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/99ea1175-e6ff-40b8-598a-1ed919852900/public",
+        "img01": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/8b34dcfe-c4b5-4493-0658-0e36f68e3900/public",
+        "img02":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/ef6cc4fd-db11-479d-4338-38a8d9372700/public",
+        "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/03d509f9-84c8-40f5-e9d2-0149e0442d00/public"
+       
+      },
+      {
+        "id": "aroma",
+        "restauratName": "Aroma Cafe Bar",
+        "productName": "DC Comics",
+        "description": "Jay Garrick",
+        "ubication": "Flash Comics #1",
+        "socialMedia": "Jay Garrick, Barry Allen, Wally West, Bart Allen",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/8985cde2-34c4-44d4-3db3-c0a74d36fa00/public"
+
+      },
+      {
+        "id": "big-mama",
+        "restauratName": "Big Mama",
+        "productName": "DC Comics",
+        "description": "Alan Scott",
+        "ubication": "All-American Comics #16",
+        "socialMedia": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz",
+        "image" : "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/acbad3c3-3b7f-4d03-4a36-bf09d17e9300/public"
+      },
+      {
+        "id": "la-nona",
+        "restauratName": "Delicias de la Nona",
+        "productName": "DC Comics",
+        "description": "Oliver Queen",
+        "ubication": "More Fun Comics #73",
+        "socialMedia": "Oliver Queen",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/967c37c0-24fa-4da4-13a2-c9011e079500/public"
+
+      },
+      {
+        "id": "toscana",
+        "restauratName": "El Mekateadero de Toscana",
+        "productName": "DC Comics",
+        "description": "Princess Diana",
+        "ubication": "All Star Comics #8",
+        "socialMedia": "Princess Diana",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/9409b868-bd24-463d-bc61-b1fa4bf11500/public"
+
+      },
+      {
+        "id": "la-troja",
+        "restauratName": "Fonda la Troja",
+        "productName": "DC Comics",
+        "description": "arroz",
+        "ubication": "Detective Comics #225",
+        "socialMedia": "Martian Manhunter",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/f3105291-b096-4f70-ed85-2731d3a84200/public"
+
+      },
+      {
+        "id": "frenchips",
+        "restauratName": "Frenchips",
+        "productName": "DC Comics",
+        "description": "Dick Grayson",
+        "ubication": "Detective Comics #38",
+        "socialMedia": "Dick Grayson",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/65b6d229-0a3b-4c76-dbdf-e68980b80900/public"
+
+      },
+      {
+        "id": "fusion",
+        "restauratName": "Fusión Cocina",
+        "productName": "DC Comics",
+        "description": "Dan Garret",
+        "ubication": "Mystery Men Comics #1",
+        "socialMedia": "Dan Garret, Ted Kord, Jaime Reyes",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/d7ca38a6-3916-41e3-f5c6-430fc472d100/public"
+
+      },
+      {
+        "id": "galilea",
+        "restauratName": "Galilea",
+        "productName": "DC Comics",
+        "description": "Dinah Drake",
+        "ubication": "Flash Comics #86",
+        "socialMedia": "Dinah Drake, Dinah Lance",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/ad8991d2-8892-4c28-d784-fbd5a56c9600/public"
+
+      },
+      {
+        "id": "memo",
+        "restauratName": "Memo Parrilla",
+        "productName": "Marvel Comics",
+        "description": "Peter Parker",
+        "ubication": "Amazing Fantasy #15",
+        "socialMedia": "Peter Parker",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/a9d16014-6b21-45ff-4646-e8b64e1ebc00/public"
+
+      },
+      {
+        "id": "jyg",
+        "restauratName": "Pizzas J&G",
+        "productName": "Marvel Comics",
+        "description": "Steve Rogers",
+        "ubication": "Captain America Comics #1",
+        "socialMedia": "Steve Rogers",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/28bc0bd2-7a30-4593-ccdc-6eb6796eac00/public"
+
+      },
+      {
+        "id": "quiubole",
+        "restauratName": "Quiubole",
+        "productName": "Marvel Comics",
+        "description": "Tony Stark",
+        "ubication": "Tales of Suspense #39",
+        "socialMedia": "Tony Stark",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/0089f6e6-23b5-4bbf-a942-f2436930f300/public"
+
+      },
+      {
+        "id": "ruperts",
+        "restauratName": "Rupert's Brunch & Grill",
+        "productName": "Marvel Comics",
+        "description": "Thor Odinson",
+        "ubication": "Journey into Myster #83",
+        "socialMedia": "Thor Odinson",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/374cab9a-b9a2-4821-0b48-994f7ab63a00/public"
+
+      },
+      {
+        "id": "tierra-querida",
+        "restauratName": "Tierra Querida",
+        "productName": "Marvel Comics",
+        "description": "Bruce Banner",
+        "ubication": "The Incredible Hulk #1",
+        "socialMedia": "Bruce Banner",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/0089f6e6-23b5-4bbf-a942-f2436930f300/public"
+
+      },
+      {
+        "id": "verona",
+        "restauratName": "Verona",
+        "productName": "Marvel Comics",
+        "description": "James Howlett",
+        "ubication": "The Incredible Hulk #180",
+        "socialMedia": "James Howlett",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/03d509f9-84c8-40f5-e9d2-0149e0442d00/public"
+
+      },
+      {
+        "id": "recanto",
+        "restauratName": "Recanto",
+        "productName": "Marvel Comics",
+        "description": "Matthew Michael Murdock",
+        "ubication": "Daredevil #1",
+        "socialMedia": "Matthew Michael Murdock",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/ef6cc4fd-db11-479d-4338-38a8d9372700/public"
+
+      },
+      {
+        "id": "malcriada",
+        "restauratName": "La Malcriada",
+        "productName": "Marvel Comics",
+        "description": "Clinton Francis Barton",
+        "ubication": "Tales of Suspense #57",
+        "socialMedia": "Clinton Francis Barton",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/8b34dcfe-c4b5-4493-0658-0e36f68e3900/public"
+
+      },
+      {
+        "id": "libertino",
+        "restauratName": "Libertino",
+        "productName": "Marvel Comics",
+        "description": "Scott Summers",
+        "ubication": "X-Men #1",
+        "socialMedia": "Scott Summers",
+        "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/0089f6e6-23b5-4bbf-a942-f2436930f300/public"
+
+      }
+    ]
+  }

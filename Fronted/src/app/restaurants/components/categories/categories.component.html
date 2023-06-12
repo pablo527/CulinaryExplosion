@@ -1,0 +1,9 @@
+<div class="grid-container">
+    <div class="grid-item" *ngFor="let categoria of categorias">
+      <div class="categoria-icon">
+        <i [class]="categoria.icon"></i>
+      </div>
+      <div class="categoria-nombre">{{ categoria.name }}</div>
+    </div>
+  </div>
+  
