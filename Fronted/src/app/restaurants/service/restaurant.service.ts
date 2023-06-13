@@ -13,17 +13,17 @@ export class RestaurantService {
     constructor(private httpClient: HttpClient) { }
 
     getRestaurant(): Observable<RestaurantResponse[]> {
-        return this.httpClient.get<RestaurantResponse[]>(`${this.baseUrl}/restaurants`)
+        return this.httpClient.get<RestaurantResponse[]>(`${this.baseUrl}/api/restaurants`)
     }
 
     getRestaurantById(id: string): Observable<RestaurantResponse | undefined> {
-        return this.httpClient.get<RestaurantResponse>(`${this.baseUrl}/restaurants/${id}`)
+        return this.httpClient.get<RestaurantResponse>(`${this.baseUrl}/api/restaurants/${id}`)
             .pipe(
                 catchError(error => of(undefined)
                 ))
     }
     getImage(id: string): Observable<string[]> {
-        return this.httpClient.get<RestaurantResponse>(`${this.baseUrl}/restaurants/${id}`)
+        return this.httpClient.get<RestaurantResponse>(`${this.baseUrl}/api/restaurants/${id}`)
             .pipe(
                 map(response => {
                     const images: string[] = [];
@@ -43,7 +43,7 @@ export class RestaurantService {
         console.log('sendData', personName, personCel, rest, ratingValue);
         const id = rest.id;
         const data = { personName, personCel, restId: id, ratingValue };
-        const url = 'URL_DEL_ENDPOINT';
+        const url = `${this.baseUrl}/api/vote/${id}/`;
         return this.httpClient.post<string[]>(url, data);
       }
 

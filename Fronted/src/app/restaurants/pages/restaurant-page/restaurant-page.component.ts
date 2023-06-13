@@ -18,6 +18,7 @@ import { VoteResponse } from '../../interface/valueVote.interface';
 export class RestaurantPageComponent implements OnInit {
 
   public rest!: RestaurantResponse;
+  message: boolean = false;
   galery!: Galery[];
   images!: any[];
   ratingValue!: number;
@@ -104,11 +105,16 @@ export class RestaurantPageComponent implements OnInit {
     .subscribe(
       response => {
         console.log('Respuesta del servicio de guardado:', response);
+        if (response.includes("success")) {
+          this.message = !this.message 
+        }
+        
       },
       error => {
         console.error('Error al guardar la respuesta:', error);
       }
     );
+    this.message = false;
     this.displayBye = true;
 
   }

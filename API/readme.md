@@ -2,6 +2,10 @@ crear entorno virtual
 
     virtualenv venv
 
+activa entorno virtual
+    source venv/bin/activate
+
+
 install django
 
     pip3 install django
