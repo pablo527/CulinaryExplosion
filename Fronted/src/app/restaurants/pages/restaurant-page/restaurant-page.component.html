@@ -1,0 +1,62 @@
+<!-- <p-galleria *ngIf="rest" [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [circular]="true"
+        [autoPlay]="true" [transitionInterval]="2000"> 
+        <ng-template pTemplate="item" let-item>
+            <img [src]="rest.img01" style="width: 100%; display: block;" />
+        </ng-template>
+</p-galleria> -->
+<div *ngIf="rest">
+  <h1 class="mt-3"> {{rest.restauratName}}</h1>
+  <p-card>
+    <ng-template pTemplate="header">
+
+      <img [src]="rest.image" alt="rest.restauratName" mat-card-image>
+    </ng-template>
+    <h2>{{rest.productName}}</h2>
+    <p appTextLimit>{{rest.description}}</p>
+    <div class="button-container">
+      <button pButton pRipple type="button" icon="pi pi-map-marker"
+        class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
+      <button pButton pRipple type="button" icon="pi pi-instagram"
+        class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
+      <button pButton pRipple type="button" icon="pi pi-whatsapp"
+        class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
+
+    </div>
+    <h2>Quieres Votar?</h2>
+    <div class="rating-container">
+      <p-rating #rating (ngModel)="ratingValue" [cancel]="false" (onRate)="onRatingChange($event)"></p-rating>
+    </div>
+    <div class="button-send">
+
+      <button pButton pRipple type="button" label="Enviar Voto" (click)="openModal()"
+        class="p-button-raised p-button-danger"></button>
+
+    </div>
+    <p-dialog [(visible)]="display" [style]="{width: '80vw'}" class="dialog-container">
+        <ng-template pTemplate="header">
+            <img src="assets/images/OllaRoja.svg" height="40"> 
+            <h2>Registre su Voto</h2>
+        </ng-template>
+      <div class="dialog-content">
+        <div class="field">
+            <label for="namePerson" >Ingrese su Nombre</label>
+            <input id="namePerson" type="text"  pInputText [(ngModel)]="personName" maxlength="50" pattern="[A-Za-z]" required/>
+            <label for="idPerson" class="block">Ingrese su Celular</label>
+            <input id="idPerson" type="text"  pInputText [(ngModel)]="personCel" pattern="[0-9]+" required />
+        </div>
+        <button pButton pRipple type="button" label="Enviar Datos" (click)="sendVoto()"></button>
+      </div>
+      <ng-template pTemplate="footer">
+      </ng-template>
+    </p-dialog>
+  </p-card>
+      <p-dialog [(visible)]="displayBye" [style]="{width: '80vw'}" class="dialog-container">
+        <div class="dialog-content">
+            <img src="assets/images/OllaRoja.svg" height="160">
+            <p>Votacion Registrada con Exito</p>
+            <p>Parece que ya votaste por este restaurante, te esperamos en uno nuevo</p>
+        </div>
+        <ng-template pTemplate="footer">
+        </ng-template>
+    </p-dialog>
+</div>

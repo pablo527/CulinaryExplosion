@@ -1,0 +1,25 @@
+.carousels {
+    border-radius: 30px;
+}
+
+.carousel-container {
+    border-radius: 15px;
+    overflow: hidden;
+    
+  }
+
+  .square-button {
+    width: 25%;
+    height: 0;
+    padding-top: 25%;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 0.25rem;
+  }
+  .custom-card {
+    width: 90%;
+    height: 10%;
+  }
+.cardi {
+    margin: auto;
+}
