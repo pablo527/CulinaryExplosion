@@ -11,6 +11,8 @@ import { GaleryService } from './restaurants/service/galery/galery.service';
 import {GalleriaModule} from 'primeng/galleria';
 import {RatingModule} from 'primeng/rating';
 
+
+
 @NgModule({
   declarations: [
     AppComponent

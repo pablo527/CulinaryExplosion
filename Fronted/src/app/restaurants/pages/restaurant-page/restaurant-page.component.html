@@ -12,7 +12,7 @@
       <img [src]="rest.image" alt="rest.restauratName" mat-card-image>
     </ng-template>
     <h2>{{rest.productName}}</h2>
-    {{rest.description}}
+    <p appTextLimit>{{rest.description}}</p>
     <div class="button-container">
       <button pButton pRipple type="button" icon="pi pi-map-marker"
         class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
@@ -24,11 +24,39 @@
     </div>
     <h2>Quieres Votar?</h2>
     <div class="rating-container">
-        <p-rating #rating (ngModel)="ratingValue" [cancel]="false" (onRate)="onRatingChange($event)"></p-rating>
+      <p-rating #rating (ngModel)="ratingValue" [cancel]="false" (onRate)="onRatingChange($event)"></p-rating>
     </div>
     <div class="button-send">
-        <button  pButton pRipple type="button" label="Enviar Voto" (click)="sendVoto()"   class="p-button-raised p-button-danger"></button>
+
+      <button pButton pRipple type="button" label="Enviar Voto" (click)="openModal()"
+        class="p-button-raised p-button-danger"></button>
 
     </div>
+    <p-dialog [(visible)]="display" [style]="{width: '80vw'}" class="dialog-container">
+        <ng-template pTemplate="header">
+            <img src="assets/images/OllaRoja.svg" height="40"> 
+            <h2>Registre su Voto</h2>
+        </ng-template>
+      <div class="dialog-content">
+        <div class="field">
+            <label for="namePerson" >Ingrese su Nombre</label>
+            <input id="namePerson" type="text"  pInputText [(ngModel)]="personName" maxlength="50" pattern="[A-Za-z]" required/>
+            <label for="idPerson" class="block">Ingrese su Celular</label>
+            <input id="idPerson" type="text"  pInputText [(ngModel)]="personCel" pattern="[0-9]+" required />
+        </div>
+        <button pButton pRipple type="button" label="Enviar Datos" (click)="sendVoto()"></button>
+      </div>
+      <ng-template pTemplate="footer">
+      </ng-template>
+    </p-dialog>
   </p-card>
+      <p-dialog [(visible)]="displayBye" [style]="{width: '80vw'}" class="dialog-container">
+        <div class="dialog-content">
+            <img src="assets/images/OllaRoja.svg" height="160">
+            <p>Votacion Registrada con Exito</p>
+            <p>Parece que ya votaste por este restaurante, te esperamos en uno nuevo</p>
+        </div>
+        <ng-template pTemplate="footer">
+        </ng-template>
+    </p-dialog>
 </div>

@@ -24,7 +24,6 @@ export class ListPageComponent implements OnInit {
    
   }
   
-
   ngOnInit(): void {
     this.restaurantService.getRestaurant()
       .subscribe(restaurants => this.restaurants = restaurants);

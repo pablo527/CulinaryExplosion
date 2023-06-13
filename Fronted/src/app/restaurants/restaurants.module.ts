@@ -12,10 +12,15 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrimengModule } from '../primeng/primeng.module';
 import { SharedModule } from '../shared/shared.module';
 import { CategoriesComponent } from './components/categories/categories.component';
-import {GalleriaModule} from 'primeng/galleria';
-import {CardModule} from 'primeng/card';
-import {ButtonModule} from 'primeng/button';
-import {RatingModule} from 'primeng/rating';
+import { GalleriaModule } from 'primeng/galleria';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { RatingModule } from 'primeng/rating';
+import { DialogModule } from 'primeng/dialog';
+import { TextLimitDirective } from 'src/app/directive/text-limit.directive';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,7 @@ import {RatingModule} from 'primeng/rating';
     CardComponent,
     RestImagePipe,
     CategoriesComponent,
+    TextLimitDirective
   ],
   imports: [
     CommonModule,
@@ -37,9 +43,11 @@ import {RatingModule} from 'primeng/rating';
     GalleriaModule,
     CardModule,
     ButtonModule,
-    RatingModule
-
-
+    RatingModule,
+    DialogModule,
+    InputTextModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class RestaurantsModule { }
