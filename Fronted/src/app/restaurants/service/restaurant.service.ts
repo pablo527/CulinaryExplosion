@@ -44,7 +44,7 @@ export class RestaurantService {
         const id = rest.id;
         const data = { personName, personCel, restId: id, ratingValue };
         const url = `${this.baseUrl}/api/vote/${id}/`;
-        return this.httpClient.post<string[]>(url, data);
+        return this.httpClient.post<string[]>(url, data)
       }
 
 
