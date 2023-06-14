@@ -25,6 +25,8 @@ export class LayoutPageComponent implements OnInit {
     
     this.restaurantService.getSuggestions(value)
     .subscribe(restautant => this.restaurants = restautant);
+
+    
   }
   clearInput() {
     this.inputValue = '';

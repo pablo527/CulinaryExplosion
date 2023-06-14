@@ -19,6 +19,7 @@ export class RestaurantPageComponent implements OnInit {
   public rest!: RestaurantResponse;
   galery!: Galery[];
   images!: any[];
+  message: boolean = false;
   ratingValue: number = 0;
   position!: string;
   display: boolean = false;
@@ -27,6 +28,7 @@ export class RestaurantPageComponent implements OnInit {
   personCel !: string;
   public votes: VoteResponse[] = [];
   public formUser: FormGroup;
+
   onRatingChange(event: any) {
     this.ratingValue = event.value;
   }

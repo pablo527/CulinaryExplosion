@@ -11,7 +11,7 @@
         "id": "911",
         "restauratName": "911 Hot Burger",
         "productName": "The Hot Summer",
-        "description": "Bruce Wayne",
+        "description": "Hot summer, una burger que da la bienvenida al solecito, a los nuevos comienzos y a la hot culture que desde el 15 de junio renacerá, te esperamos en nuestro nuevo punto de experiencias 🥵🔥 Disfruta por solo $17.900 de la burger más HOT del pedazo la cual está compuesta de 160 gramos de carne de res, mermelada de uchuva y gulupa queso cheddar, queso asado, lechuga romana, cebolla crispy, salsa de ajo y pan brioche 😏🔥",
         "ubication": "https://goo.gl/maps/qWteaFYpzxEQz18Y9",
         "instagram": "https://instagram.com/911_hotburger?igshid=MzRlODBiNWFlZA==",
         "whatsapp": "https://wa.me/message/3CWB4UWXKMQVA1",
@@ -19,7 +19,6 @@
         "img01": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/e95918a6-a4ab-45e1-0499-5cefa7cb9300/public",
         "img02":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/2c299051-1ec4-47cf-f4bb-816ff6024000/public",
         "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/ff74e03f-1763-4063-38c3-af97ee1b9500/public"
-       
       },
       {
         "id": "agasajo",
@@ -32,8 +31,7 @@
         "image": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/99ea1175-e6ff-40b8-598a-1ed919852900/public",
         "img01": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/1eacb995-62b5-4d42-8e78-ceb8b52ff500/public",
         "img02":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/291c6bcf-ea4b-45df-6173-0ba93d212800/public",
-        "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/18f169f1-6f3a-4df7-9208-d3bef93bf800/public"
-       
+        "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/18f169f1-6f3a-4df7-9208-d3bef93bf800/public"   
       },
       {
         "id": "aroma",
@@ -47,8 +45,6 @@
         "img01": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/5230054f-c61d-466b-2a03-590c16036900/public",
         "img02":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/5cf8771a-369d-429c-bddf-7ff25179b100/public",
         "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/46029854-99e9-4308-7233-a1a2c39a9f00/public"
-       
-
       },
       {
         "id": "big-mama",
@@ -287,8 +283,6 @@
         "img01": "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/14840184-42b1-46d4-7bf7-8ab55f526400/public",
         "img02":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/0c44575e-e336-4383-b062-d40444b17000/public",
         "img03":  "https://imagedelivery.net/HkNnLH-CQgmjypzHVruBDg/1f280dd2-f14a-47ea-7cef-db852034cb00/public"
-       
-
       }
     ]
   }

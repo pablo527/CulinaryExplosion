@@ -57,11 +57,13 @@
       </ng-template>
     </p-dialog>
   </p-card>
-      <p-dialog [(visible)]="displayBye" [style]="{width: '80vw'}" class="dialog-container" (onHide)="closeDialogo()">
+    <p-dialog [(visible)]="displayBye" [style]="{width: '80vw'}" class="dialog-container">
         <div class="dialog-content">
             <img src="assets/images/OllaRoja.svg" height="160">
-            <p>Votacion Registrada con Exito</p>
-            <p>Parece que ya votaste por este restaurante, te esperamos en uno nuevo</p>
+            <p *ngIf="message;else elseBlock">Votacion Registrada con Exito</p>
+            <ng-template #elseBlock>
+              <p>Ya ha votado por este Restaurante</p>
+            </ng-template>
         </div>
         <ng-template pTemplate="footer">
         </ng-template>
