@@ -16,37 +16,35 @@ import { VoteResponse } from '../../interface/valueVote.interface';
   styleUrls: ['./restaurant-page.component.css'],
 })
 export class RestaurantPageComponent implements OnInit {
-
   public rest!: RestaurantResponse;
   galery!: Galery[];
   images!: any[];
-  ratingValue!: number;
+  ratingValue: number = 0;
   position!: string;
   display: boolean = false;
   displayBye: boolean = false;
   personName !: string;
   personCel !: string;
-  public votes :VoteResponse[] = [];
+  public votes: VoteResponse[] = [];
   public formUser: FormGroup;
   onRatingChange(event: any) {
     this.ratingValue = event.value;
-
   }
 
-    responsiveOptions:any[] = [
-        {
-            breakpoint: '1024px',
-            numVisible: 5
-        },
-        {
-            breakpoint: '768px',
-            numVisible: 3
-        },
-        {
-            breakpoint: '560px',
-            numVisible: 1
-        }
-    ];
+  responsiveOptions: any[] = [
+    {
+      breakpoint: '1024px',
+      numVisible: 5
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 3
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1
+    }
+  ];
   constructor(
     private restaurantService: RestaurantService,
     private activateRoute: ActivatedRoute,
@@ -73,13 +71,13 @@ export class RestaurantPageComponent implements OnInit {
         return
       })
 
-      // this.galeryService.getGalery().then((galery: Galery[]) =>{
-      //   this.galery = galery;
-      // })
+    // this.galeryService.getGalery().then((galery: Galery[]) =>{
+    //   this.galery = galery;
+    // })
 
-      // this.galeryService.getGalery().subscribe((data: Galery[])=>{
-      //   this.galery = data.filter(galery => galery.id === this.rest);
-      // })
+    // this.galeryService.getGalery().subscribe((data: Galery[])=>{
+    //   this.galery = data.filter(galery => galery.id === this.rest);
+    // })
   }
 
   goBack() {
@@ -87,31 +85,34 @@ export class RestaurantPageComponent implements OnInit {
   }
 
   openModal() {
-    if(this.ratingValue === undefined){
-      this.ratingValue = 0;
-    }
     this.display = true;
+    //this.ratingValue = 0;
+  }
+  closeDialogo() {
+    this.router.navigate(['/']);
   }
 
- sendVoto() {
-    console.log(this.personName, this.personCel , 'datos de usuario')
+
+  sendVoto() {
+    console.log(this.personName, this.personCel, 'datos de usuario')
     console.log('Valor Enviado', this.ratingValue);
     this.display = false;
+    this.ratingValue = 0;
     const restId = this.rest.id;
     console.log(this.rest, 'id del restaurante que vote')
 
-    this.restaurantService.sendData(this.personName, this.personCel, {id : restId}, this.ratingValue)
-    .subscribe(
-      response => {
-        console.log('Respuesta del servicio de guardado:', response);
-      },
-      error => {
-        console.error('Error al guardar la respuesta:', error);
-      }
-    );
+    this.restaurantService.sendData(this.personName, this.personCel, { id: restId }, this.ratingValue)
+      .subscribe(
+        response => {
+          console.log('Respuesta del servicio de guardado:', response);
+        },
+        error => {
+          console.error('Error al guardar la respuesta:', error);
+        }
+      );
     this.displayBye = true;
-
+    this.ratingValue = 0;
   }
-  
+
 
 }

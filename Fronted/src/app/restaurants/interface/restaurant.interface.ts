@@ -4,7 +4,8 @@ export interface RestaurantResponse {
     productName:   ProductName;
     description:   string;
     ubication:     string;
-    socialMedia:   string;
+    instagram:   string;
+    whatsapp: string;
     alt_img?:      string;
     image: string;
     img01: string;

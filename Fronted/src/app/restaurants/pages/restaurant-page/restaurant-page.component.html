@@ -13,7 +13,7 @@
     </ng-template>
     <h2>{{rest.productName}}</h2>
     <p appTextLimit>{{rest.description}}</p>
-    <div class="button-container">
+    <div class="button-container" *ngIf="rest">
       <button pButton pRipple type="button" icon="pi pi-map-marker"
         class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
       <button pButton pRipple type="button" icon="pi pi-instagram"
@@ -28,7 +28,7 @@
     </div>
     <div class="button-send">
 
-      <button pButton pRipple type="button" label="Enviar Voto" (click)="openModal()"
+      <button pButton pRipple type="button" label="Continuar" (click)="openModal()"
         class="p-button-raised p-button-danger"></button>
 
     </div>
@@ -50,7 +50,7 @@
       </ng-template>
     </p-dialog>
   </p-card>
-      <p-dialog [(visible)]="displayBye" [style]="{width: '80vw'}" class="dialog-container">
+      <p-dialog [(visible)]="displayBye" [style]="{width: '80vw'}" class="dialog-container" (onHide)="closeDialogo()">
         <div class="dialog-content">
             <img src="assets/images/OllaRoja.svg" height="160">
             <p>Votacion Registrada con Exito</p>
