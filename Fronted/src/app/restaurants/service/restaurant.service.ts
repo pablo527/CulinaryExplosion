@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { RestaurantResponse } from '../interface/restaurant.interface';
 import { environment } from 'src/environments/environment';
 import { Observable, catchError, map, of } from 'rxjs';
-import { Galery } from '../models/galery';
 import { VoteResponse } from '../interface/valueVote.interface';
 
 @Injectable({ providedIn: 'root' })
@@ -38,6 +37,9 @@ export class RestaurantService {
                 })
             );
     }
+    getSuggestions(query : string) : Observable<RestaurantResponse[]> {
+        return this.httpClient.get<RestaurantResponse[]>(`${this.baseUrl}/restaurants/?q=${query}&_limit=9`);
+    }
 
     sendData(personName: string, personCel: string, rest: any, ratingValue: number): Observable<string[]> {
         console.log('sendData', personName, personCel, rest, ratingValue);
@@ -46,11 +48,5 @@ export class RestaurantService {
         const url = 'URL_DEL_ENDPOINT';
         return this.httpClient.post<string[]>(url, data);
       }
-
-
-
-    // getGalerys(): Observable<Galery[]>{
-    //     return this.httpClient.get<Galery[]>('assets/galery.json')
-    // }
 
 }

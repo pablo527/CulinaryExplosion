@@ -1,28 +1,35 @@
-<!-- <p-galleria *ngIf="rest" [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [circular]="true"
-        [autoPlay]="true" [transitionInterval]="2000"> 
-        <ng-template pTemplate="item" let-item>
-            <img [src]="rest.img01" style="width: 100%; display: block;" />
-        </ng-template>
-</p-galleria> -->
 <div *ngIf="rest">
   <h1 class="mt-3"> {{rest.restauratName}}</h1>
   <p-card>
     <ng-template pTemplate="header">
-
-      <img [src]="rest.image" alt="rest.restauratName" mat-card-image>
+      <div class="slider-box">
+        <ul>
+          <li>
+            <img [src]="rest.img01" alt="" >
+          </li>
+          <li>
+            <img [src]="rest.img02" alt="">
+          </li>
+          <li>
+            <img [src]="rest.img03" alt="">
+          </li>
+        </ul>
+      </div>
     </ng-template>
-    <h2>{{rest.productName}}</h2>
+    <h2 mt-3>{{rest.productName}}</h2>
     <p appTextLimit>{{rest.description}}</p>
     <div class="button-container" *ngIf="rest">
-      <button pButton pRipple type="button" icon="pi pi-map-marker"
-        class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
-      <button pButton pRipple type="button" icon="pi pi-instagram"
-        class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
-      <button pButton pRipple type="button" icon="pi pi-whatsapp"
-        class="p-button-outlined p-button-rounded p-button-danger m-2"></button>
-
+      <a href="{{rest.whatsapp}}" pButton pRipple target="_blank" class="p-button-outlined p-button-rounded p-button-danger m-1">
+        <i class="pi pi-whatsapp"></i>
+      </a> 
+      <a href="{{rest.instagram}}" pButton pRipple target="_blank" class="p-button-outlined p-button-rounded p-button-danger m-1">
+        <i class="pi pi-instagram"></i>
+      </a>
+      <a href="{{rest.ubication}}" pButton pRipple target="_blank" class="p-button-outlined p-button-rounded p-button-danger m-1">
+        <i class="pi pi-map-marker"></i>
+      </a>
     </div>
-    <h2>Quieres Votar?</h2>
+    <h2>¿Quieres Votar?</h2>
     <div class="rating-container">
       <p-rating #rating (ngModel)="ratingValue" [cancel]="false" (onRate)="onRatingChange($event)"></p-rating>
     </div>

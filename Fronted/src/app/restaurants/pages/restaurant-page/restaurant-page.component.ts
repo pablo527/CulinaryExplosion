@@ -67,17 +67,8 @@ export class RestaurantPageComponent implements OnInit {
       ).subscribe(rest => {
         if (!rest) return this.router.navigate(['/restaurant/list']);
         this.rest = rest;
-        //  console.log({rest})
         return
       })
-
-    // this.galeryService.getGalery().then((galery: Galery[]) =>{
-    //   this.galery = galery;
-    // })
-
-    // this.galeryService.getGalery().subscribe((data: Galery[])=>{
-    //   this.galery = data.filter(galery => galery.id === this.rest);
-    // })
   }
 
   goBack() {
@@ -86,7 +77,6 @@ export class RestaurantPageComponent implements OnInit {
 
   openModal() {
     this.display = true;
-    //this.ratingValue = 0;
   }
   closeDialogo() {
     this.router.navigate(['/']);

@@ -1,11 +1,12 @@
 .carousels {
     border-radius: 30px;
+    display: flow-root;
 }
 
 .carousel-container {
     border-radius: 15px;
     overflow: hidden;
-    
+
   }
 
   .square-button {
@@ -22,4 +23,8 @@
   }
 .cardi {
     margin: auto;
+}
+
+:host ::ng-deep .p-carousel-container {
+  display: block !important;
 }

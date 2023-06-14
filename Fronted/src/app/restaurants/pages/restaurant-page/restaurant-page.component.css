@@ -1,3 +1,35 @@
+
+.slider-box {
+  width: 110%;
+  height: auto;
+  margin: 10px auto 0;
+  margin-left: 0%;
+  overflow: hidden;
+}
+.slider-box ul {
+  display: flex;
+  width: 200%;
+
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img{
+  width: 99%;
+}
+ @keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  30% {margin-left: -100%;}
+  40% {margin-left: -100%;}
+
+} 
 .button-container {
     display: flex;
     flex-direction: row-reverse;
@@ -13,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh; /* Ajusta la altura según tus necesidades */
+    height: 5vh;
   }
   rating-container .p-rating .p-rating-icon {
     font-size: 4rem;
@@ -35,5 +67,12 @@
   }
   
   .dialog-content {
-    margin-top: 20px;
+    margin-top: 10px;
   }
+  
+ @media(max-width:991px){
+  body{
+    padding: 30px;
+  }
+  
+ } 
