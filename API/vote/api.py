@@ -37,7 +37,7 @@ class VoteViewSet(viewsets.ModelViewSet):
         else:
             request.session['voted_restaurants'] = [restaurant_id]
             
-        return Response('Vote successfull', status=status.HTTP_200_OK)
+        return Response('success', status=status.HTTP_200_OK)
         
     @action(detail=True, methods=['GET'])
     def getVotesByRestaurantId(self, request, restaurant_id=None):
